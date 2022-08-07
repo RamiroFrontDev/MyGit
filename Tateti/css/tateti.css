@@ -1,1 +1,76 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+.tateti-container {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 52px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    padding: 0px 41%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+.tateti-stage {
+    transition: 1s;
+}
+
+.tateti-row {
+    position: relative;
+    width: 277px;
+    height: 261px;
+    column-count: 3;
+    column-gap: 0;
+    transition: 1s;
+}
+
+.rotate {
+    transform: rotate(360deg);
+}
+
+.colorWin {
+    color: #00ce4a;
+    border-color: #000;
+}
+
+span {
+    width: 92px;
+    align-items: center;
+    height: 86px;
+    display: grid;
+    text-align: center;
+    cursor: pointer;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    transition: 0.5s;
+}
+
+span:nth-child(3n) {
+    border-bottom: none;
+}
+
+span:nth-child(7),
+span:nth-child(8),
+span:nth-child(9) {
+    border-right: none;
+}
+
+.not-click {
+    pointer-events: none;
+}
+
+.boxMessage {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 33px;
+}
+
+.clean {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 0;
+    background: #00ce4a;
+    color: white;
+}
